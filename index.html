@@ -1,0 +1,46 @@
+<div class="container">
+    <button id="fiddle">Fiddle</button>
+    
+    <div id="stats">
+        FiddlePoints: <span id="fiddle-points">0</span>
+    </div>
+    
+    <hr />
+        
+    <div id="html-area" class="html code">
+        <div id="html-html" class="line swappable">&lt;div&gt;</div>
+        <div class="indent">
+            <div id="button-html" class="line swappable">&lt;button id="fiddle"&gt;Fiddle&lt;/button&gt;</div>
+            <div class="blank line"></div>
+            <div class="line">&lt;div id="stats"&gt;</div>
+            <div class="indent">
+                <div class="line">FiddlePoints: &lt;span id="fiddle-points">0&lt;/span&gt;</div>
+            </div>
+            <div class="line">&lt;/div&gt;</div>
+        </div>
+        <div class="line">&lt;/div&gt;</div>
+    </div>
+    
+    <hr />
+    
+    <div id="js-area" class="js code">
+        <div class="line">var fiddlePoints = 0;</div>
+        <div class="blank line"></div>
+        <div class="line">$('#fiddle').on('click', function() {</div>
+        <div id="js-onclick" class="indent">
+            <div id="fiddle-increment-html" class="swappable line">fiddlePoints++;</div>
+            <div class="line">$('#fiddle-points').text(fiddlePoints);</div>
+        </div>
+        <div class="line">});</div>
+        <div id="set-interval">
+            <div class="blank line"></div>
+            <div class="line">window.setInterval(function() {</div>
+            <div class="indent">
+                <div class="line">updateStats();</div>
+            </div>
+            <div class="line">}, <span id="interval">1000</span>);</div>
+        </div>
+        <div class="blank line"></div>
+        <div id="interval-html" class="line swappable">// TODO: add setInterval call</div>
+    </div>
+</div>
