@@ -1,0 +1,29 @@
+.container {
+    padding-top: 10px;
+}
+
+#stats {
+    padding: 10px 0;
+}
+
+.code {
+    font-family: Consolas, Monaco;
+}
+
+.js.code {
+}
+
+.code .line {
+}
+
+.code .blank.line {
+    display: inline-block;
+}
+
+.code .indent {
+    margin-left: 2.3em;
+}
+
+#set-interval {
+    display: none;
+}
